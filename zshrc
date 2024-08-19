@@ -111,3 +111,14 @@ source $ZSH/oh-my-zsh.sh
 
 # Gabriel
 alias glo='git log --pretty=format:"%C(yellow)%h %Cblue%>(12)%ad %Cgreen%<(10,trunc)%aN %C(auto,reset)%s%C(auto,red)% gD% D" --date=relative'
+
+# consensus, FE build out of memory
+export NODE_OPTIONS=--max_old_space_size=16384;
+
+export PATH=$PATH:'/Applications/Visual Studio Code.app/Contents/Resources/app/bin'
+export GIT_EDITOR='code -w'
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
