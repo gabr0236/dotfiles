@@ -15,7 +15,11 @@ zstyle ':omz:update' frequency 10
 
 COMPLETION_WAITING_DOTS="true"
 
-plugins=(git)
+plugins=(
+ git
+ history
+ web-search
+)
 
 source $ZSH/oh-my-zsh.sh
 
