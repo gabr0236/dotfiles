@@ -1,0 +1,1 @@
+/Users/Gabs/.config/nvim/init.lua
