@@ -35,7 +35,7 @@ alias glo='git log --pretty=format:"%C(yellow)%h %Cblue%>(12)%ad %Cgreen%<(10,tr
 export NODE_OPTIONS=--max_old_space_size=16384;
 
 export PATH=$PATH:'/Applications/Visual Studio Code.app/Contents/Resources/app/bin'
-export GIT_EDITOR='nvim'
+export GIT_EDITOR='vim'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
