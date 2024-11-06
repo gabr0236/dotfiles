@@ -393,6 +393,13 @@ require('lazy').setup({
           find_files = {
             follow = true,
           },
+          live_grep = {
+            additional_args = {
+              {
+                '-L',
+              },
+            },
+          },
         },
         extensions = {
           ['ui-select'] = {
