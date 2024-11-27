@@ -643,7 +643,13 @@ require('lazy').setup({
           filetypes = { 'typescript', 'javascript', 'vue' },
         },
         volar = {},
-        omnisharp = {},
+        omnisharp = {
+          settings = {
+            RoselynExtensionsOptions = {
+              EnableImportCompletion = true,
+            },
+          },
+        },
         tailwindcss = {
           classAttributes = { 'class', 'className', 'class:list', 'classList', 'ngClass' },
           includeLanguages = {
