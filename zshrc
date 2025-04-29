@@ -5,6 +5,18 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# terminal history
+export HISTFILE=~/.zsh_history
+export HISTSIZE=100000 # events kept in memory
+export SAVEHIST=100000 # events saved to HISTFILE on session end
+# make sure these options are set so history is appended and shared:
+setopt APPEND_HISTORY        # add new entries to the history file, don't overwrite
+setopt INC_APPEND_HISTORY    # write each command as you type it
+setopt SHARE_HISTORY         # share history across all running shells
+setopt HIST_IGNORE_ALL_DUPS  # ignore duplicates
+setopt HIST_IGNORE_SPACE     # ignore space
+setopt EXTENDED_HISTORY      # record timestamps
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -45,3 +57,10 @@ export NVM_DIR="$HOME/.nvm"
 
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
+export PATH="/opt/homebrew/opt/python@3.13/bin:$PATH"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/grh/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/grh/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/grh/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/grh/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
