@@ -11,6 +11,7 @@ local apps = {
   d = "DataGrip",
   w = "WebStorm",
   g = "ChatGPT",
+  n = "Notes",
 }
 
 -- Helper: cycle windows in the given direction
