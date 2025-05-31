@@ -62,7 +62,7 @@ export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
 export PATH="/opt/homebrew/opt/python@3.13/bin:$PATH"
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/grh/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/grh/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/gabriel/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/gabriel/Downloads/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/grh/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/grh/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '/Users/gabriel/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/gabriel/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
