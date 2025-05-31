@@ -5,8 +5,9 @@ local hyper = {"ctrl", "alt", "cmd", "shift"}
 
 -- 1-letter quick-launch table  (extend at will)
 local apps = {
+  a = "Claude",
   c = "Google Chrome",
-  t = "iTerm",           -- or "Terminal"
+  t = "iTerm",
   r = "Rider",
   d = "DataGrip",
   w = "WebStorm",
