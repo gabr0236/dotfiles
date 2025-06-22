@@ -13,6 +13,7 @@ local apps = {
   w = "WebStorm",
   g = "ChatGPT",
   n = "Notes",
+  s = "Scalar",
 }
 
 -- Helper: cycle windows in the given direction
@@ -53,3 +54,4 @@ for key, appName in pairs(apps) do
     end
   end)
 end
+
