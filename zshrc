@@ -45,7 +45,7 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # pretty git log --oneline
-alias glo='git log --pretty=format:"%C(yellow)%h %Cblue%>(12)%ad %Cgreen%<(10,trunc)%aN %C(auto,reset)%s%C(auto,red)% gD% D" --date=relative'
+alias glo='git log --pretty=format:"%C(yellow)%h %Cblue%>(12,trunc)%ad %Cgreen%<(10,trunc)%aN %C(auto,reset)%s%C(auto,red)% gD% D" --date=relative'
 
 # consensus, FE build out of memory
 export NODE_OPTIONS=--max_old_space_size=16384;
