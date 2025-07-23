@@ -60,6 +60,8 @@ export NVM_DIR="$HOME/.nvm"
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
 export PATH="/opt/homebrew/opt/python@3.13/bin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
+alias claude="/opt/homebrew/bin/claude"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/gabriel/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/gabriel/Downloads/google-cloud-sdk/path.zsh.inc'; fi
