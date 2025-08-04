@@ -13,7 +13,8 @@ local apps = {
   w = "WebStorm",
   g = "ChatGPT",
   n = "Notes",
-  s = "Scalar",
+  s = "Slack",
+  l = "Linear",
 }
 
 -- Helper: cycle windows in the given direction
