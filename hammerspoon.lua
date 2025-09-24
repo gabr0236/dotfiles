@@ -15,6 +15,7 @@ local apps = {
   n = "Notes",
   s = "Slack",
   l = "Linear",
+  p = "Postman 2",
 }
 
 -- Helper: cycle windows in the given direction
