@@ -5,6 +5,10 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+
+
+
+
 # terminal history
 export HISTFILE=~/.zsh_history
 export HISTSIZE=100000 # events kept in memory
@@ -61,7 +65,6 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
 export PATH="/opt/homebrew/opt/python@3.13/bin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
-alias claude="/opt/homebrew/bin/claude"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/gabriel/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/gabriel/Downloads/google-cloud-sdk/path.zsh.inc'; fi
