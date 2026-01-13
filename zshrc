@@ -71,3 +71,5 @@ if [ -f '/Users/gabriel/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Use
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/gabriel/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/gabriel/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+export PATH="/opt/homebrew/opt/postgresql@18/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
