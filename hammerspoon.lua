@@ -20,10 +20,14 @@ local apps = {
   j = "Journal",
 }
 
--- Helper: cycle windows in the given direction
-local function cycleWindows(forward)
-  local mods = forward and {"cmd"} or {"cmd", "shift", "alt"}
-  hs.eventtap.keyStroke(mods, "`", 0)   -- 0 = no delay
+local function cycleAppWindows()
+  local app = hs.application.frontmostApplication()
+  if not app then return end
+
+  local windows = app:allWindows()
+  if #windows < 2 then return end
+
+  windows[2]:focus()
 end
 
 -- Bind every entry in the table
@@ -44,7 +48,7 @@ for key, appName in pairs(apps) do
 
     if front and front:bundleID() == target:bundleID() then
       -- App already front-most → cycle its windows forward
-      cycleWindows(true)
+      cycleAppWindows()
     else
 	-- App is running but in background or minimized
 
