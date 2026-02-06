@@ -27,7 +27,18 @@ local function cycleAppWindows()
   local windows = app:allWindows()
   if #windows < 2 then return end
 
-  windows[2]:focus()
+  table.sort(windows, function(a, b) return a:id() < b:id() end)
+
+  local focused = hs.window.focusedWindow()
+  local current = 1
+  for i, w in ipairs(windows) do
+    if w:id() == focused:id() then
+      current = i
+      break
+    end
+  end
+
+  windows[(current % #windows) + 1]:focus()
 end
 
 -- Bind every entry in the table
