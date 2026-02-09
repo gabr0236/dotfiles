@@ -24,7 +24,13 @@ local function cycleAppWindows()
   local app = hs.application.frontmostApplication()
   if not app then return end
 
-  local windows = app:allWindows()
+  local allWins = app:allWindows()
+  local windows = {}
+  for _, w in ipairs(allWins) do
+    if not w:isMinimized() then
+      windows[#windows + 1] = w
+    end
+  end
   if #windows < 2 then return end
 
   table.sort(windows, function(a, b) return a:id() < b:id() end)
