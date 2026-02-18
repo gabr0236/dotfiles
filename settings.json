@@ -159,7 +159,7 @@
       "Bash(brew services:*)",
       "Bash(docker exec:*)",
       "Bash(FILTER_BRANCH_SQUELCH_WARNING=1 git filter-branch:*)",
-      "Bash(git mv:*)",
+      "Bash(git mv:*)"
     ],
     "deny": [],
     "ask": [
@@ -178,27 +178,8 @@
         ]
       }
     ],
-    "UserPromptSubmit": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "$CLAUDE_PROJECT_DIR/.claude/hooks/skill-activation-prompt.sh"
-          }
-        ]
-      }
-    ],
-    "PostToolUse": [
-      {
-        "matcher": "Edit|MultiEdit|Write",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "$CLAUDE_PROJECT_DIR/.claude/hooks/post-tool-use-tracker.sh"
-          }
-        ]
-      }
-    ]
+    "UserPromptSubmit": [],
+    "PostToolUse": []
   },
   "alwaysThinkingEnabled": true,
   "skipDangerousModePermissionPrompt": true,
